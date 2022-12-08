@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_purple"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/login_activity_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Permissions"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/conthrax_sb"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:id="@+id/login_activity_Ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#534fbe"
+        android:textStyle="bold"
+        android:fontFamily="@font/aretha_light"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <EditText
+        android:id="@+id/login_activity_ETName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#F5F5F5"
+        android:hint="What is your name?"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textColorHint="#c5c5c5"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_activity_btnLogin"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Login"
+        />
+    </LinearLayout>
+
+</LinearLayout>
